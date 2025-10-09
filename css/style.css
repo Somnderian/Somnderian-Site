@@ -90,7 +90,7 @@ a:hover {
 .polaroid:hover {
     filter: grayscale(0%);
     transform: scale(1.1);
-    box-shadow: 10px 10px 5px black;
+    box-shadow: 10px 10px 5px rgb(48, 48, 48);
 }
 
 .photo {
@@ -147,7 +147,7 @@ p {
         width: 90%;
         height: 110%;
         padding-bottom: 30px;
-    justify-items: center;
+        justify-items: center;
 
     }
 
@@ -159,6 +159,7 @@ p {
 
     }
 
+    /* change flex-direction to accomodate smaller screens  */
     .linkrow {
         display: flex;
         flex-direction: column;
