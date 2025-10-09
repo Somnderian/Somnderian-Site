@@ -19,10 +19,10 @@ div {
     display: flex;
 }
 
-div:nth-of-type(3){
+div:nth-of-type(3) {
     height: auto;
     justify-content: center;
-    flex:1; 
+    flex: 1;
 }
 
 
@@ -56,20 +56,21 @@ a:visited {
 
 a:hover {
     color: crimson;
-  
+
 }
+
 /* containing grid gallery */
 #maincontent {
     padding-bottom: 30px;
     justify-items: center;
     display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            grid-auto-rows: minmax(200px, auto);
-        
-        }
-        
-#gridtitle{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(200px, auto);
+
+}
+
+#gridtitle {
     justify-content: center;
     text-align: center;
     grid-column: 1/5;
@@ -77,65 +78,91 @@ a:hover {
 }
 
 
-.polaroid{
-    
-    width:440px;
-    Height:540px;
+.polaroid {
+
+    width: 440px;
+    Height: 540px;
     background-color: white;
     transform: scale(1);
     transition: .5s;
 }
 
-.polaroid:hover{
-    filter:grayscale(0%);
+.polaroid:hover {
+    filter: grayscale(0%);
     transform: scale(1.1);
-    box-shadow:10px 10px 5px black;
+    box-shadow: 10px 10px 5px black;
 }
 
-.photo{
-    width:400px;
-    height:400px;
+.photo {
+    width: 400px;
+    height: 400px;
     padding-left: 20px;
     padding-top: 20px;
-    object-fit:cover;
+    object-fit: cover;
 }
-p{
+
+p {
     text-align: center
 }
 
 /* break point for tablet  */
-@media screen and (max-width:1800px){
-   #maincontent {
-    padding-bottom: 30px;
-justify-items: center;
-    display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px; 
-        }
-        #gridtitle{
-    justify-content: center;
-    text-align: center;
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
+@media screen and (max-width:1800px) {
+    #maincontent {
+        padding-bottom: 30px;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    #gridtitle {
+        justify-content: center;
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
 
 }
 
 /* break point for mobile */
-@media screen and (max-width:900px){
- #maincontent {
-    padding-bottom: 30px;
-justify-items: center;
-    display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 30px;
-            grid-auto-rows: minmax(200px, auto);
+@media screen and (max-width:900px) {
+    #maincontent {
+        padding-bottom: 50px;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 75px;
+        grid-auto-rows: minmax(200px, auto);
     }
-  #gridtitle{
-    justify-content: center;
-    text-align: center;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
+
+    #gridtitle {
+        justify-content: center;
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .polaroid {
+
+        width: 90%;
+        height: 110%;
+        padding-bottom: 30px;
+    justify-items: center;
+
+    }
+
+    .photo {
+        width: 85%;
+        height: 85%;
+        padding-left: 7.5%;
+        padding-top: 10%;
+
+    }
+
+    .linkrow {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 }
