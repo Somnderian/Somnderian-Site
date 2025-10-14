@@ -7,7 +7,15 @@
     <title>SOMNDERIAN</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
-     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <!-- EmbedPDF -->
+    <script defer data-domain="pdfobject.com" src="https://analytics.pwk.io/js/script.js"></script>
+
+    <style>
+
+
+  
+    </style>
 </head>
 
 <body>
@@ -23,55 +31,55 @@
                 href="https://www.instagram.com/somnderian/">Instagram</a> </h3>
     </div>
     <div id="maincontent">
-         <header id="gridtitle">
+        <header id="gridtitle">
             <h1 class="headers">Casts Gallery</h1>
         </header>
         <article class="polaroid">
-            <img class= "photo" src="images/osseoteethdress.jpeg">
+            <img class="photo" src="images/osseoteethdress.jpeg">
             <p>Osseonaut, selfconsuming</p>
         </article>
         <article class="polaroid">
-            <img class= "photo" src="images/jauntyteeth.jpeg">
+            <img class="photo" src="images/jauntyteeth.jpeg">
             <p>Teeth</p>
         </article>
         <article class="polaroid">
-            <img class= "photo" src="images/bigshoes.jpeg">
+            <img class="photo" src="images/bigshoes.jpeg">
             <p>Osseo, sans Naut</p>
         </article>
         <article class="polaroid">
-            <img class= "photo" src="images/osseodread.jpeg">
+            <img class="photo" src="images/osseodread.jpeg">
             <p>Dread osseoNaut</p>
         </article>
         <article class="polaroid">
-            <img class= "photo" src="images/ThinMan.jpeg">
+            <img class="photo" src="images/ThinMan.jpeg">
             <p>The Thin Man</p>
         </article>
         <article class="polaroid">
-             <img class= "photo" src="images/LongFurbyfront.jpeg">
+            <img class="photo" src="images/LongFurbyfront.jpeg">
             <p>Long Furby</p>
         </article>
         <article class="polaroid">
-            <img class= "photo" src="images/skinwyrms.jpeg">
+            <img class="photo" src="images/skinwyrms.jpeg">
             <p>Skin Wyrms</p>
         </article>
         <article class="polaroid">
-            <img class= "photo" src="images/toothslugjaunty.jpeg">
+            <img class="photo" src="images/toothslugjaunty.jpeg">
             <p>Tooth Slug</p>
         </article>
         <article class="polaroid">
-             <img class= "photo" src="images/antlers.jpeg">
+            <img class="photo" src="images/antlers.jpeg">
             <p>Antler Terrain</p>
         </article>
         <article class="polaroid">
-            <img class= "photo" src="images/osseotorsos.jpeg">
+            <img class="photo" src="images/osseotorsos.jpeg">
             <p>Osseonaut Torsos</p>
         </article>
         <article class="polaroid">
-          <img class= "photo" src="images/jauntybighats.jpeg">
+            <img class="photo" src="images/jauntybighats.jpeg">
             <p>54mm Scale Brody Helmets</p>
         </article>
         <article class="polaroid">
-          <img class= "photo" src="images/gynoshield.jpeg">
+            <img class="photo" src="images/gynoshield.jpeg">
             <p>Osseonaut Accesories</p>
         </article>
 
@@ -79,6 +87,17 @@
     <div>
         <h1 class="headers">Other Stuff</h1>
     </div>
+    <!-- Embed PDF Viewer -->
+    <div id="essays">
+        <h1 class="headers">Essays</h1>
+
+        <div id="my-pdf"></div>
+
+        <script src="https://unpkg.com/pdfobject@2.3.1/pdfobject.min.js"></script>
+        <script>PDFObject.embed("/pdfs/writtenreport.pdf", "#my-pdf");</script>
+
+
+    </div>
 </body>
 
-</html> 
+</html>

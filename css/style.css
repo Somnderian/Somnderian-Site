@@ -16,7 +16,7 @@ div {
     border: 2px solid fuchsia;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display:flex;
 }
 
 div:nth-of-type(3) {
@@ -25,6 +25,10 @@ div:nth-of-type(3) {
     flex: 1;
 }
 
+.pdfobject-container { 
+    height: 50vh;
+    width: 100%; 
+}
 
 
 .headers {
@@ -105,6 +109,13 @@ p {
     text-align: center
 }
 
+#essays {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
 /* break point for tablet  */
 @media screen and (max-width:1800px) {
     #maincontent {
@@ -162,6 +173,7 @@ p {
     /* change flex-direction to accomodate smaller screens  */
     .linkrow {
         display: flex;
+     
         flex-direction: column;
     }
 
