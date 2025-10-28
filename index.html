@@ -11,26 +11,24 @@
     <!-- EmbedPDF -->
     <script defer data-domain="pdfobject.com" src="https://analytics.pwk.io/js/script.js"></script>
 
-    <style>
-
-
-  
-    </style>
 </head>
 
 <body>
     <div>
         <section ID="IntroductionCM">
+            <!-- This is the title, my online handle that has accidentally become my brand-->
             <h1 class="headers">SOMNDERIAN</h1>
 
         </section>
     </div>
     <div>
+        <!-- This is links to my youtube channel, online shop and instagram. -->
         <h3 class="linkrow"> <a href="http://www.youtube.com/@Somnderian">Youtube</a> <a
                 href="https://ko-fi.com/somnderian">Casts For Sale</a> <a
                 href="https://www.instagram.com/somnderian/">Instagram</a> </h3>
     </div>
     <div id="maincontent">
+        <!-- This container holds the main gallery of my casts, in a Grid, within the flex container -->
         <header id="gridtitle">
             <h1 class="headers">Casts Gallery</h1>
         </header>
@@ -91,11 +89,11 @@
     <div id="essays">
         <h1 class="headers">Essays</h1>
 
-        <div id="my-pdf"></div>
+        <div id="my-pdf">
+            <script src="https://unpkg.com/pdfobject@2.3.1/pdfobject.min.js"></script>
+            <script>PDFObject.embed("../pdfs/writtenreport.pdf", "#my-pdf");</script>
 
-        <script src="https://unpkg.com/pdfobject@2.3.1/pdfobject.min.js"></script>
-        <script>PDFObject.embed("/pdfs/writtenreport.pdf", "#my-pdf");</script>
-
+        </div>
 
     </div>
 </body>
