@@ -20,11 +20,6 @@ div {
     display: flex;
 }
 
-div:nth-of-type(3) {
-    height: auto;
-    justify-content: center;
-    flex: 1;
-}
 
 .pdfobject-container {
     height: 50vh;
@@ -65,7 +60,10 @@ a:hover {
 }
 
 /* containing grid gallery */
-#maincontent {
+div:nth-of-type(3) {
+    height: auto;
+    justify-content: center;
+    flex: 1;
     padding-bottom: 30px;
     justify-items: center;
     display: grid;
